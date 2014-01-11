@@ -5,12 +5,39 @@
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
 	<meta name="viewport" id="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;">
 	
-	<script src="phonegap.js"></script>
-	<script src="barcodescanner.js"></script>
-	<script src="dialogs.js"></script>
-</head>
-<body onload="onBodyLoad()">
-	<h1>Hello world, this is a first test :)</h1>
-	<p>This is another one to test the update mechanism</p>
-</body>
+
+<script type="text/javascript" charset="utf-8" src="phonegap-1.0.0.js"></script>
+    <script type="text/javascript" charset="utf-8">
+
+    // Wait for PhoneGap to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    // PhoneGap is ready
+    //
+    function onDeviceReady() {
+        // Empty
+    }
+
+    // alert dialog dismissed
+    function alertDismissed() {
+        // do something
+    }
+
+    // Show a custom alert
+    //
+    function showAlert() {
+        navigator.notification.alert(
+            'You are the winner!',  // message
+            alertDismissed,         // callback
+            'Game Over',            // title
+            'Done'                  // buttonName
+        );
+    }
+
+    </script>
+  </head>
+  <body>
+    <p><a href="#" onclick="showAlert(); return false;">Show Alert</a></p>
+  </body>
 </html>
