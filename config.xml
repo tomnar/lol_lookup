@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "li.quast.lol_lookup"
+        version     = "0.0.0" >
+
+    <name>LoL Lookup</name>
+
+    <description>
+        A simple app for looking up stuff in League of Legends
+    </description>
+
+    <author href="https://quast.li" email="support@quast.li">
+        Tom Quast
+    </author>
+    
+    <gap:platform name="ios" />
+	<gap:platform name="android" />
+	<gap:platform name="winphone" />
+
+</widget>
