@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>LoL Lookup App</title>
+	<title>LoL Lookup App</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" id="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;">
+	
+	<script>
+		function onBodyLoad(){
+			document.addEventListener("deviceready",onDeviceReady,false);
+		}
+		
+		function onDeviceReady(){
+			navigator.notification.alert("native popup!");
+		}
+	</script>
 </head>
-<body>
+<body onload="onBodyLoad()">
 	<h1>Hello world, this is a first test :)</h1>
 	<p>This is another one to test the update mechanism</p>
 </body>
