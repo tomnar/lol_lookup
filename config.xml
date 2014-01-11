@@ -41,6 +41,7 @@
 
     <!-- Plugins -->
     <gap:plugin name="org.apache.cordova.dialogs" />
+    <gap:plugin name="com.phonegap.plugins.barcodescanner" />
    
 
 </widget>
